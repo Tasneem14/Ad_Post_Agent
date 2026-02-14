@@ -21,13 +21,13 @@ A premium, AI-powered social media content generator that orchestrates **Gemini 
 ## � Screenshots
 
 ### Web Interface
-![Web Interface](Ad_Post_Agent/UI.png)
+![Web Interface](UI.png)
 
 
 ### Generated Post
-![Input](Ad_Post_Agent/Input.jpeg)
+![Input](Input.jpeg)
 Text: Ever notice how a perfect crunch makes things funnier? That's the Lay's effect. It's not just a snack, it's an audible spark turning ordinary moments into pure joy. Get crunching! 😂 #Lays
-![Generated Output](Ad_Post_Agent/Output.png)
+![Generated Output](Output.png)
 
 
 ## �🛠️ Architecture
