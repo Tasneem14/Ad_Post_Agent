@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Content Orchestrator | AI Agent</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="app-container">
+        <!-- Header -->
+        <header class="glass-header">
+            <div class="logo">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" class="logo-icon">
+                    <path d="M12 2L2 7L12 12L22 7L12 2Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M2 17L12 22L22 17" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M2 12L12 17L22 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                <span>Content Orchestrator</span>
+            </div>
+            <div class="status-indicator">
+                <span class="dot"></span>
+                System Ready
+            </div>
+        </header>
+
+        <main class="main-content">
+            <!-- Left Panel: Controls -->
+            <section class="control-panel glass-panel">
+                <h2>Generate New Content</h2>
+                <form id="generateForm">
+                    <!-- Platform & Intent -->
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="platform">Platform</label>
+                            <div class="select-wrapper">
+                                <select id="platform" name="platform" required>
+                                    <option value="" disabled selected>Select Platform</option>
+                                    <option value="X">X (Twitter)</option>
+                                    <option value="TIKTOK">TikTok</option>
+                                    <option value="INSTAGRAM">Instagram</option>
+                                    <option value="LINKEDIN">LinkedIn</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="intent">Intent</label>
+                            <div class="select-wrapper">
+                                <select id="intent" name="intent" required>
+                                    <option value="" disabled selected>Select Intent</option>
+                                    <option value="DEFAULT">Default (Organic)</option>
+                                    <option value="CONVERSION_PAIDAD">Conversion Ad</option>
+                                    <option value="EDUCATION_AD">Education Ad</option>
+                                    <option value="PHOTO_CAROUSEL">Photo Carousel</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Core Inputs -->
+                    <div class="form-group">
+                        <label for="content_idea">Content Idea</label>
+                        <input type="text" id="content_idea" name="content_idea" placeholder="e.g., AI-powered marketing tool" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="description">Detailed Description</label>
+                        <textarea id="description" name="description" rows="3" placeholder="Describe the context, target audience, key benefits..." required></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="reference_text">Reference Text (Optional)</label>
+                        <textarea id="reference_text" name="reference_text" rows="2" placeholder="Brand voice examples, copy snippets..."></textarea>
+                    </div>
+
+                    <!-- Media Controls -->
+                    <div class="form-group">
+                        <label for="user_media_choice">Media Preference</label>
+                        <div class="radio-group">
+                            <label class="radio-card">
+                                <input type="radio" name="user_media_choice" value="image" checked>
+                                <span class="card-content">Image</span>
+                            </label>
+                            <label class="radio-card">
+                                <input type="radio" name="user_media_choice" value="video">
+                                <span class="card-content">Video</span>
+                            </label>
+                            <label class="radio-card">
+                                <input type="radio" name="user_media_choice" value="text_only">
+                                <span class="card-content">Text Only</span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- File Uploads -->
+                    <div class="file-upload-section">
+                        <div class="form-group">
+                            <label>Style Reference Image</label>
+                            <div class="file-drop-area" id="refImageArea">
+                                <span class="file-msg">Drag & drop or click to upload</span>
+                                <input type="file" id="reference_image" name="reference_image" accept="image/*">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label>Video Init Image (Optional)</label>
+                            <div class="file-drop-area" id="initImageArea">
+                                <span class="file-msg">Drag & drop or click to upload</span>
+                                <input type="file" id="video_init_image" name="video_init_image" accept="image/*">
+                            </div>
+                        </div>
+                    </div>
+
+                    <button type="submit" class="generate-btn" id="generateBtn">
+                        <span class="btn-text">Initialize Agent</span>
+                        <div class="loading-spinner"></div>
+                    </button>
+                </form>
+            </section>
+
+            <!-- Right Panel: Output -->
+            <section class="output-panel glass-panel">
+                <div class="tabs">
+                    <button class="tab-btn active" data-tab="result">Result</button>
+                    <button class="tab-btn" data-tab="logs">Agent Logs</button>
+                </div>
+
+                <div class="tab-content active" id="resultTab">
+                    <div id="emptyState" class="empty-state">
+                        <div class="pulse-circle"></div>
+                        <p>Waiting for generation...</p>
+                    </div>
+
+                    <div id="resultContent" class="result-content hidden">
+                        <!-- Text Result -->
+                        <div class="result-block">
+                            <h3>Generated Copy</h3>
+                            <div class="copy-container">
+                                <pre id="generatedText"></pre>
+                                <button class="copy-btn" onclick="copyText()">Copy</button>
+                            </div>
+                        </div>
+
+                        <!-- Media Result -->
+                        <div class="result-block">
+                            <h3>Generated Media</h3>
+                            <div id="mediaContainer" class="media-container">
+                                <!-- Media will be injected here -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="tab-content" id="logsTab">
+                    <div class="logs-console" id="logsConsole">
+                        <div class="log-entry system">System initialized. Waiting for input...</div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+    <script src="/static/script.js"></script>
+</body>
+</html>
