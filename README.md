@@ -1,6 +1,10 @@
 # Content Orchestration Agent 🤖✨
 
+<<<<<<< HEAD
 A premium, AI-powered social media content generator that orchestrates **Gemini 2.0 Flash** (for copy) and **Fal.ai** (for high-quality media) to create optimized posts for X, TikTok, Instagram, and LinkedIn.
+=======
+A premium, AI-powered social media content generator that orchestrates **Gemini 2.0 Flash** (for copy) and **Fal.ai** (for high-quality media) to create optimized posts for X and TikTok.
+>>>>>>> a7b01f3f10ab5799e485a6e68b8a9962ac0affcf
 
 ![License](https://img.shields.io/badge/license-MIT-blue.svg)
 ![Python](https://img.shields.io/badge/python-3.10+-blue.svg)
@@ -21,12 +25,25 @@ A premium, AI-powered social media content generator that orchestrates **Gemini 
 ## � Screenshots
 
 ### Web Interface
+<<<<<<< HEAD
 ![Web Interface](path/to/web_interface_screenshot.png)
 *The modern dark-mode interface for generating content.*
 
 ### Generated Output
 ![Generated Output](path/to/generated_output_screenshot.png)
 *Example of generated copy and media side-by-side.*
+=======
+![Web Interface](UI.png)
+
+
+### Generated Post
+#### Input
+![Input](Input.jpeg)
+#### Text: Ever notice how a perfect crunch makes things funnier? That's the Lay's effect. It's not just a snack, it's an audible spark turning ordinary moments into pure joy. Get crunching! 😂 #Lays
+#### Output
+![Generated Output](Output.png)
+
+>>>>>>> a7b01f3f10ab5799e485a6e68b8a9962ac0affcf
 
 ## �🛠️ Architecture
 
@@ -36,7 +53,11 @@ The system is built on a robust stack:
 -   **Frontend**: Vanilla JS, HTML5, CSS3 (Modern Glassmorphism Design)
 -   **AI Orchestration**: LangGraph
 -   **LLM**: Google Gemini 2.0 Flash
+<<<<<<< HEAD
 -   **Media Models**: Fal.ai (Nano banana, veo3, etc.)
+=======
+-   **Media Models**: Fal.ai (Nano banana, veo3)
+>>>>>>> a7b01f3f10ab5799e485a6e68b8a9962ac0affcf
 
 ## 📦 Installation
 
@@ -99,7 +120,11 @@ The system is built on a robust stack:
 └── README.md                   # Project documentation
 ```
 
+<<<<<<< HEAD
 ## 🤝 Contributing
+=======
+
+>>>>>>> a7b01f3f10ab5799e485a6e68b8a9962ac0affcf
 
 Contributions are welcome! Please feel free to submit a Pull Request.
 
