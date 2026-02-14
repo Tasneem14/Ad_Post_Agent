@@ -25,8 +25,10 @@ A premium, AI-powered social media content generator that orchestrates **Gemini 
 
 
 ### Generated Post
+#### Input
 ![Input](Input.jpeg)
-Text: Ever notice how a perfect crunch makes things funnier? That's the Lay's effect. It's not just a snack, it's an audible spark turning ordinary moments into pure joy. Get crunching! 😂 #Lays
+#### Text: Ever notice how a perfect crunch makes things funnier? That's the Lay's effect. It's not just a snack, it's an audible spark turning ordinary moments into pure joy. Get crunching! 😂 #Lays
+#### Output
 ![Generated Output](Output.png)
 
 
