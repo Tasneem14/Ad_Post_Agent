@@ -1,6 +1,6 @@
 # Content Orchestration Agent 🤖✨
 
-A premium, AI-powered social media content generator that orchestrates **Gemini 2.0 Flash** (for copy) and **Fal.ai** (for high-quality media) to create optimized posts for X, TikTok, Instagram, and LinkedIn.
+A premium, AI-powered social media content generator that orchestrates **Gemini 2.0 Flash** (for copy) and **Fal.ai** (for high-quality media) to create optimized posts for X and TikTok.
 
 ![License](https://img.shields.io/badge/license-MIT-blue.svg)
 ![Python](https://img.shields.io/badge/python-3.10+-blue.svg)
@@ -21,13 +21,13 @@ A premium, AI-powered social media content generator that orchestrates **Gemini 
 ## � Screenshots
 
 ### Web Interface
-![Web Interface](path/to/web_interface_screenshot.png)
+![Web Interface](path/to/UI.png)
 
 
 ### Generated Post
-![Generated Input]()
-Text:
-![Generated Output](path/to/generated_output_screenshot.png)
+![Input](path/to/Input.jpeg)
+Text: Ever notice how a perfect crunch makes things funnier? That's the Lay's effect. It's not just a snack, it's an audible spark turning ordinary moments into pure joy. Get crunching! 😂 #Lays
+![Generated Output](path/to/generated_Output.png)
 
 
 ## �🛠️ Architecture
@@ -38,7 +38,7 @@ The system is built on a robust stack:
 -   **Frontend**: Vanilla JS, HTML5, CSS3 (Modern Glassmorphism Design)
 -   **AI Orchestration**: LangGraph
 -   **LLM**: Google Gemini 2.0 Flash
--   **Media Models**: Fal.ai (Nano banana, veo3, etc.)
+-   **Media Models**: Fal.ai (Nano banana, veo3)
 
 ## 📦 Installation
 
