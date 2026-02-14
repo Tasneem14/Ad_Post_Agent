@@ -8,17 +8,27 @@ A premium, AI-powered social media content generator that orchestrates **Gemini 
 
 ## 🚀 Features
 
--   **Multi-Platform Support**: Tailored content for X (Twitter), TikTok, Instagram, and LinkedIn.
+-   **Multi-Platform Support**: Tailored content for X (Twitter) and TikTok 
 -   **Intent-Driven Generation**: Choose from Organic, Paid Ads, Educational, or Conversion-focused strategies.
 -   **Advanced Media Generation**:
     -   **Images**: High-resolution, style-consistent images via Fal.ai (Flux/SDXL).
     -   **Videos**: Short-form video generation using Fal.ai (Minimax/Runway).
-    -   **Carousels**: Multi-slide visual storytelling.
+    -   **Carousels**: Multi-slide visual storytelling for TikTok.
 -   **LangGraph Orchestration**: A stateful multi-agent workflow (Planner → Prompt Engineer → Copywriter → Visual Refiner → Media Producer).
 -   **Modern Web Interface**: A sleek, dark-mode UI with glassmorphism effects for seamless interaction.
 -   **Style Transfer**: Upload reference images to guide the visual aesthetic.
 
-## 🛠️ Architecture
+## � Screenshots
+
+### Web Interface
+![Web Interface](path/to/web_interface_screenshot.png)
+*The modern dark-mode interface for generating content.*
+
+### Generated Output
+![Generated Output](path/to/generated_output_screenshot.png)
+*Example of generated copy and media side-by-side.*
+
+## �🛠️ Architecture
 
 The system is built on a robust stack:
 
@@ -26,7 +36,7 @@ The system is built on a robust stack:
 -   **Frontend**: Vanilla JS, HTML5, CSS3 (Modern Glassmorphism Design)
 -   **AI Orchestration**: LangGraph
 -   **LLM**: Google Gemini 2.0 Flash
--   **Media Models**: Fal.ai (Flux, Minimax, etc.)
+-   **Media Models**: Fal.ai (Nano banana, veo3, etc.)
 
 ## 📦 Installation
 
