@@ -1,6 +1,5 @@
-A premium, AI-powered social media content generator that orchestrates **Gemini 2.0 Flash** (for copy) and **Fal.ai** (for high-quality media) to create optimized posts for X, TikTok, Instagram, and LinkedIn.
+A premium, AI-powered social media content generator that orchestrates **Gemini 2.0 Flash** (for text) and **Fal.ai** (for high-quality media) to create optimized posts for X and TikTok
 =======
-A premium, AI-powered social media content generator that orchestrates **Gemini 2.0 Flash** (for copy) and **Fal.ai** (for high-quality media) to create optimized posts for X and TikTok.
 
 ![License](https://img.shields.io/badge/license-MIT-blue.svg)
 ![Python](https://img.shields.io/badge/python-3.10+-blue.svg)
