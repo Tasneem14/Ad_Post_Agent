@@ -40,7 +40,7 @@ A premium, AI-powered social media content generator that orchestrates **Gemini 
 
 
 
-## �🛠️ Architecture
+## 🛠️ Architecture
 
 The system is built on a robust stack:
 
@@ -48,11 +48,8 @@ The system is built on a robust stack:
 -   **Frontend**: Vanilla JS, HTML5, CSS3 (Modern Glassmorphism Design)
 -   **AI Orchestration**: LangGraph
 -   **LLM**: Google Gemini 2.0 Flash
--   **Media Models**: Fal.ai (Nano banana, veo3, etc.)
-=======
 -   **Media Models**: Fal.ai (Nano banana, veo3)
-
-
+  
 ## 📦 Installation
 
 1.  **Clone the repository**:
