@@ -88,21 +88,9 @@ The system is built on a robust stack:
     -   Click **Initialize Agent**.
 
 4.  **View Results**:
-    -   The agency will display the generated copy and media side-by-side.
+    -   The agency will display the generated text and media side-by-side.
     -   Check the **Agent Logs** tab to see the internal thought process of the agents.
 
-## 📂 Project Structure
-
-```
-├── main.py                     # FastAPI entry point
-├── content_orchestrationfal.py # LangGraph agent logic & tool definitions
-├── platform_rules_config.json  # Configuration for platform-specific rules
-├── static/                     # Frontend assets
-│   ├── index.html              # Web interface
-│   ├── style.css               # Styling
-│   └── script.js               # Client-side logic
-└── README.md                   # Project documentation
-```
 
 
 
