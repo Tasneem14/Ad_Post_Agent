@@ -20,7 +20,7 @@ A premium, AI-powered social media content generator that orchestrates **Gemini 
 ## � Screenshots
 
 ### Web Interface
-![Web Interface](path/to/UI.png)
+![Web Interface](UI.png)
 
 ### Generated Post
 #### Input
